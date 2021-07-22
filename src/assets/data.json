@@ -1,0 +1,12 @@
+{
+    "venues": [
+        {
+            "description": "Ejemplo de marker",
+            "name": "Parque Carolina",
+            "geometry": [
+                -0.18271729056166636,
+                -78.48395615544348
+            ]
+        }
+    ]
+}

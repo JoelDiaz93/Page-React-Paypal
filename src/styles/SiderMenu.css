@@ -1,0 +1,34 @@
+#components-layout-demo-side .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+    background: #fff;
+}
+
+.ant-layout-sider {
+    height: 110vmax;
+    flex: auto !important;
+}
+
+.ant-layout-sider-trigger {
+    height: 64px;
+    line-height: 64px;
+}
+
+.sider {
+    min-height: 100vh;
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+    background: #fff;
+}
+
+.sider {
+    min-height: 100vh;
+}
