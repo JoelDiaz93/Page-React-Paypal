@@ -4,9 +4,18 @@ import PayPalReact from "./PayPalReact";
 
 const ItemPets = ({pets}) => {
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [isActivatedPayPal, setIsActivatedPayPal] = useState(false);
 
     const showModal = () => {
         setIsModalVisible(true);
+    };
+
+    const activatePayPal = () => {
+        setIsActivatedPayPal(true);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
     };
 
     return (
@@ -29,11 +38,13 @@ const ItemPets = ({pets}) => {
                         </Col>
                     );
                 })}
-                <Modal title="Pet" visible={isModalVisible} footer={null}>
+                <Modal title="Pet" visible={isModalVisible} onCancel={handleCancel} footer={null}>
                     <p><strong>Descripción: </strong></p>
                     <p><strong>Ubicación: </strong></p>
                     <p><strong>Precio: </strong>$0.10</p>
-                    <PayPalReact/>
+                    {isActivatedPayPal ? <PayPalReact/> :
+                        <Button onClick={activatePayPal}>Comprar</Button>
+                    }
                 </Modal>
             </Row>
         </>

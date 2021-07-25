@@ -45,7 +45,7 @@ const ItemService = ({services}) => {
                 <p><strong>Ubicación: </strong></p>
                 <p><strong>Precio: </strong>$0.10</p>
                 {isActivatedPayPal ? <PayPalReact/> :
-                    <button onClick={activatePayPal}>Comprar</button>
+                    <Button onClick={activatePayPal}>Comprar</Button>
                 }
             </Modal>
         </Row>

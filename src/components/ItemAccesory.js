@@ -4,9 +4,18 @@ import PayPalReact from "./PayPalReact";
 
 const ItemAccesory = ({accesories}) => {
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [isActivatedPayPal, setIsActivatedPayPal] = useState(false);
 
     const showModal = () => {
         setIsModalVisible(true);
+    };
+
+    const activatePayPal = () => {
+        setIsActivatedPayPal(true);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
     };
 
     return (
@@ -31,11 +40,13 @@ const ItemAccesory = ({accesories}) => {
                     </Col>
                 );
             })}
-            <Modal title="Accesory" visible={isModalVisible} footer={null}>
+            <Modal title="Accesory" visible={isModalVisible} onCancel={handleCancel} footer={null}>
                 <p><strong>Descripción: </strong></p>
                 <p><strong>Ubicación: </strong></p>
                 <p><strong>Precio: </strong>$0.10</p>
-                <PayPalReact/>
+                {isActivatedPayPal ? <PayPalReact/> :
+                    <Button onClick={activatePayPal}>Comprar</Button>
+                }
             </Modal>
         </Row>
     );
