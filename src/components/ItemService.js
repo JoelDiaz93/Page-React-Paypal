@@ -1,42 +1,23 @@
 import React, {useEffect, useState} from "react";
-//import ReactDOM from "react-dom"
+import PayPalReact from "./PayPalReact";
 import {Button, Card, Col, Modal, Row} from "antd";
-import ModalForPaypal from "./ModalForPayPal";
-
-//const PayPalButton = window.paypal.Buttons.driver("react", {React, ReactDOM});
 
 const ItemService = ({services}) => {
     const [isModalVisible, setIsModalVisible] = useState(false);
-    /*
-    const createOrder = (data, actions) => {
-        return actions.order.create({
-            intent: "CAPTURE",
-            purchase_units: [
-                {
-                    description: "Cool looking for table",
-                    amount: {
-                        currency_code: "USD",
-                        value: "0.10",
-                    },
-                },
-            ],
-        });
-    }
-    */
-    /*
-    const onApprove = async (data, actions) => {
-        const order = await actions.order.capture();
-        console.log(order);
-    }
-    */
+    const [isActivatedPayPal, setIsActivatedPayPal] = useState(false);
+
     const showModal = () => {
         setIsModalVisible(true);
     };
-    /*
-    const handleOk = () => {
+
+    const activatePayPal = () => {
+        setIsActivatedPayPal(true);
+    };
+
+    const handleCancel = () => {
         setIsModalVisible(false);
     };
-    */
+
     return (
         <Row style={{margin: "0 10%"}}>
             {services.map((service) => {
@@ -46,9 +27,9 @@ const ItemService = ({services}) => {
                             style={{width: 200}}
                             cover={<img alt="Not Found Image" src={service.photoURL}/>}
                             actions={[
-                              <Button type="primary" onClick={showModal}>
-                                Ver más
-                              </Button>,
+                                <Button type="primary" onClick={showModal}>
+                                    Ver más
+                                </Button>,
                             ]}
                         >
                             <Card.Meta
@@ -59,20 +40,14 @@ const ItemService = ({services}) => {
                     </Col>
                 );
             })}
-          {/*
-          <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <PayPalButton
-                createOrder={(data, actions) => createOrder(data, actions)}
-                onApprove={(data, actions) => onApprove(data, actions)}
-            />
-          </Modal>
-          */}
-            {
-                <ModalForPaypal value={isModalVisible} />
-            }
+            <Modal title="Service" visible={isModalVisible} onCancel={handleCancel} footer={null}>
+                <p><strong>Descripción: </strong></p>
+                <p><strong>Ubicación: </strong></p>
+                <p><strong>Precio: </strong>$0.10</p>
+                {isActivatedPayPal ? <PayPalReact/> :
+                    <button onClick={activatePayPal}>Comprar</button>
+                }
+            </Modal>
         </Row>
     );
 };

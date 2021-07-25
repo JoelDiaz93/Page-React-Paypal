@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da93bdf-0dda-4a51-b44e-232ebaf31cb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Project-Mascotas-8bd7fd4665c3275ac2ec011176b6e7b551248b84.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemAccesory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemAccesory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemFood.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemFood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemPets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemPets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SearchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SearchPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModalForPayPal.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +36,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -54,7 +56,9 @@
       <option name="presentableId" value="Default" />
       <updated>1626999802828</updated>
       <workItem from="1626999949388" duration="4151000" />
-      <workItem from="1627011904090" duration="10564000" />
+      <workItem from="1627011904090" duration="11057000" />
+      <workItem from="1627048619093" duration="1118000" />
+      <workItem from="1627093458998" duration="14446000" />
     </task>
     <servers />
   </component>
