@@ -1,34 +1,17 @@
 import React, {useEffect, useState} from "react";
-import ReactDOM from "react-dom"
+import PayPalReact from "./PayPalReact";
 import {Button, Card, Col, Modal, Row} from "antd";
-
-const PayPalButton = window.paypal.Buttons.driver("react", {React, ReactDOM});
 
 const ItemService = ({services}) => {
     const [isModalVisible, setIsModalVisible] = useState(false);
-
-    const createOrder = (data, actions) => {
-        return actions.order.create({
-            purchase_units: [
-                {
-                    amount: {
-                        value: "0.01",
-                    },
-                },
-            ],
-        });
-    }
-
-    const onApprove = (data, actions) => {
-        return actions.order.capture();
-    }
+    const [isActivatedPayPal, setIsActivatedPayPal] = useState(false);
 
     const showModal = () => {
         setIsModalVisible(true);
     };
 
-    const handleOk = () => {
-        setIsModalVisible(false);
+    const activatePayPal = () => {
+        setIsActivatedPayPal(true);
     };
 
     const handleCancel = () => {
@@ -44,9 +27,9 @@ const ItemService = ({services}) => {
                             style={{width: 200}}
                             cover={<img alt="Not Found Image" src={service.photoURL}/>}
                             actions={[
-                              <Button type="primary" onClick={showModal}>
-                                Open Modal
-                              </Button>,
+                                <Button type="primary" onClick={showModal}>
+                                    Ver más
+                                </Button>,
                             ]}
                         >
                             <Card.Meta
@@ -57,15 +40,14 @@ const ItemService = ({services}) => {
                     </Col>
                 );
             })}
-          <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <PayPalButton
-                createOrder={(data, actions) => createOrder(data, actions)}
-                onApprove={(data, actions) => onApprove(data, actions)}
-            />
-          </Modal>
+            <Modal title="Service" visible={isModalVisible} onCancel={handleCancel} footer={null}>
+                <p><strong>Descripción: </strong></p>
+                <p><strong>Ubicación: </strong></p>
+                <p><strong>Precio: </strong>$0.10</p>
+                {isActivatedPayPal ? <PayPalReact/> :
+                    <Button onClick={activatePayPal}>Comprar</Button>
+                }
+            </Modal>
         </Row>
     );
 };

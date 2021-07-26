@@ -80,7 +80,7 @@ const SearchPage = () => {
 
     const onSearch = (value) => {
         setSearch(value);
-        console.log("movie", element);
+        console.log("pet", element);
         setElement("");
     };
 
