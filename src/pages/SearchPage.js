@@ -23,7 +23,7 @@ const SearchPage = () => {
 
     useEffect(() => {
         const getPets = async () => {
-            await db.ref(`pets`).once("value", (snapshot) => {
+            await db.ref("pets").once("value", (snapshot) => {
                 const temp = [];
                 snapshot.forEach((childSnapshot) => {
                     temp.push({ id: childSnapshot.key, ...childSnapshot.val() });
@@ -34,7 +34,7 @@ const SearchPage = () => {
             });
         };
         const getFood = async () => {
-            db.ref("food").once("value", (snapshot) => {
+            await db.ref("food").once("value", (snapshot) => {
                 const temp = [];
                 snapshot.forEach((childSnapshot) => {
                     temp.push({ id: childSnapshot.key, ...childSnapshot.val() });
@@ -45,7 +45,7 @@ const SearchPage = () => {
             });
         };
         const getAccesory = async () => {
-            db.ref("accesory").once("value", (snapshot) => {
+            await db.ref("accesory").once("value", (snapshot) => {
                 const temp = [];
                 snapshot.forEach((childSnapshot) => {
                     temp.push({ id: childSnapshot.key, ...childSnapshot.val() });
@@ -56,7 +56,7 @@ const SearchPage = () => {
             });
         };
         const getService = async () => {
-            db.ref("service").once("value", (snapshot) => {
+            await db.ref("service").once("value", (snapshot) => {
                 const temp = [];
                 snapshot.forEach((childSnapshot) => {
                     temp.push({ id: childSnapshot.key, ...childSnapshot.val() });

@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da93bdf-0dda-4a51-b44e-232ebaf31cb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/database.rules.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemAccesory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemAccesory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemFood.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemFood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemPets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemPets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PayPalReact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PayPalReact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AccesoriesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AccesoriesPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CategoryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CategoryPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/FoodPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FoodPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ServicePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ServicePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SearchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SearchPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
