@@ -32,6 +32,14 @@ const ItemService = ({services}) => {
                                 </Button>,
                             ]}
                         >
+                            <Modal title="Pet" visible={isModalVisible} onCancel={handleCancel} footer={null}>
+                                <p><strong>Descripción: </strong>{service.description}</p>
+                                <p><strong>Marca: </strong>{service.brand}</p>
+                                <p><strong>Precio: </strong>{service.price}</p>
+                                {isActivatedPayPal ? <PayPalReact info={service}/> :
+                                    <Button onClick={activatePayPal}>Comprar</Button>
+                                }
+                            </Modal>
                             <Card.Meta
                                 title={service.servicename}
                                 description={service.description}

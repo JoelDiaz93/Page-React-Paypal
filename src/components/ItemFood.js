@@ -32,19 +32,22 @@ const ItemFood = ({foods}) => {
                                 </Button>
                             ]}
                         >
+                            <Modal title="Pet" visible={isModalVisible} onCancel={handleCancel} footer={null}>
+                                <p><strong>Descripción: </strong>{food.description}</p>
+                                <p><strong>Marca: </strong>{food.brand}</p>
+                                <p><strong>Precio: </strong>{food.price}</p>
+                                {isActivatedPayPal ? <PayPalReact info={food}/> :
+                                    <Button onClick={activatePayPal}>Comprar</Button>
+                                }
+                            </Modal>
                             <Card.Meta title={food.foodname} description={food.description}/>
                         </Card>
                     </Col>
+
                 );
+
             })}
-            <Modal title="Food" visible={isModalVisible} onCancel={handleCancel} footer={null}>
-                <p><strong>Descripción: </strong></p>
-                <p><strong>Ubicación: </strong></p>
-                <p><strong>Precio: </strong>$0.10</p>
-                {isActivatedPayPal ? <PayPalReact/> :
-                    <Button onClick={activatePayPal}>Comprar</Button>
-                }
-            </Modal>
+
         </Row>
     );
 };
