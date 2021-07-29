@@ -32,12 +32,12 @@ const ItemFood = ({foods}) => {
                                 </Button>
                             ]}
                         >
-                            <Modal title="Pet" visible={isModalVisible} onCancel={handleCancel} footer={null}>
+                            <Modal title="Food" visible={isModalVisible} onCancel={handleCancel} footer={null}>
                                 <p><strong>Descripción: </strong>{food.description}</p>
                                 <p><strong>Marca: </strong>{food.brand}</p>
                                 <p><strong>Precio: </strong>{food.price}</p>
                                 {isActivatedPayPal ? <PayPalReact info={food}/> :
-                                    <Button onClick={activatePayPal}>Comprar</Button>
+                                    <Button type="primary" danger onClick={activatePayPal}>Comprar</Button>
                                 }
                             </Modal>
                             <Card.Meta title={food.foodname} description={food.description}/>

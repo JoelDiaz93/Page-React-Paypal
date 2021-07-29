@@ -33,19 +33,19 @@ const ItemPets = ({pets}) => {
                                     </Button>
                                 ]}
                             >
+                                <Modal title="Pet" visible={isModalVisible} onCancel={handleCancel} footer={null}>
+                                    <p><strong>Descripción: </strong>{pet.description}</p>
+                                    <p><strong>Marca: </strong>{pet.brand}</p>
+                                    <p><strong>Precio: </strong>{pet.price}</p>
+                                    {isActivatedPayPal ? <PayPalReact info={pet}/> :
+                                        <Button type="primary" danger onClick={activatePayPal}>Comprar</Button>
+                                    }
+                                </Modal>
                                 <Card.Meta title={pet.petname} description={pet.breed}/>
                             </Card>
                         </Col>
                     );
                 })}
-                <Modal title="Pet" visible={isModalVisible} onCancel={handleCancel} footer={null}>
-                    <p><strong>Descripción: </strong></p>
-                    <p><strong>Ubicación: </strong></p>
-                    <p><strong>Precio: </strong>$0.10</p>
-                    {isActivatedPayPal ? <PayPalReact/> :
-                        <Button onClick={activatePayPal}>Comprar</Button>
-                    }
-                </Modal>
             </Row>
         </>
     );

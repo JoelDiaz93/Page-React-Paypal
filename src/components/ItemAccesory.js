@@ -32,12 +32,12 @@ const ItemAccesory = ({accesories}) => {
                                 </Button>
                             ]}
                         >
-                            <Modal title="Pet" visible={isModalVisible} onCancel={handleCancel} footer={null}>
+                            <Modal title="Accessory" visible={isModalVisible} onCancel={handleCancel} footer={null}>
                                 <p><strong>Descripción: </strong>{accesory.description}</p>
                                 <p><strong>Marca: </strong>{accesory.brand}</p>
                                 <p><strong>Precio: </strong>{accesory.price}</p>
                                 {isActivatedPayPal ? <PayPalReact info={accesory}/> :
-                                    <Button onClick={activatePayPal}>Comprar</Button>
+                                    <Button type="primary" danger onClick={activatePayPal}>Comprar</Button>
                                 }
                             </Modal>
                             <Card.Meta
@@ -48,14 +48,6 @@ const ItemAccesory = ({accesories}) => {
                     </Col>
                 );
             })}
-            <Modal title="Accesory" visible={isModalVisible} onCancel={handleCancel} footer={null}>
-                <p><strong>Descripción: </strong></p>
-                <p><strong>Ubicación: </strong></p>
-                <p><strong>Precio: </strong>$0.10</p>
-                {isActivatedPayPal ? <PayPalReact/> :
-                    <Button onClick={activatePayPal}>Comprar</Button>
-                }
-            </Modal>
         </Row>
     );
 };
