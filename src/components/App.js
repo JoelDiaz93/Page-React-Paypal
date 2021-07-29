@@ -1,10 +1,10 @@
-import { Layout } from "antd";
 import "../styles/App.css";
 import React from "react";
 import MainLayout from "./MainLayout";
 import HomePage from "../pages/HomePage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { AuthProvider } from "../lib/auth";
+import Routes from "../constants/routes";
 import AboutPage from "../pages/AboutPage";
 import UsersPage from "../pages/UsersPage";
 import NotFoundPage from "../pages/NotFoundPage";

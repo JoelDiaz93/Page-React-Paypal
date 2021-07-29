@@ -52,7 +52,7 @@ const AccesoriesPage = () => {
                 photo = values.photo[0].originFileObj;
             }
 
-            const { accesoryname, brand, description } = values;
+            const { accesoryname, brand, price, description } = values;
             var postListPet = db.ref("accesory");
             var newPostPet = postListPet.push();
             let postId = newPostPet.getKey();
@@ -62,6 +62,7 @@ const AccesoriesPage = () => {
                 uid,
                 accesoryname,
                 brand,
+                price,
                 description,
                 photoURL,
             });
@@ -77,6 +78,10 @@ const AccesoriesPage = () => {
             throw error;
         }
     };
+
+    function onChange(value) {
+        console.log('changed', value);
+    }
 
     const validateMessages = {
         required: "${label} is required!",
@@ -146,6 +151,31 @@ const AccesoriesPage = () => {
                     ]}
                 >
                     <Input />
+                </Form.Item>
+
+                <Form.Item
+                    name="price"
+                    label="Precio"
+                    tooltip="Precio del accesorio"
+                    rules={[
+                        {
+                            required: true,
+                            message: "Ingresa el precio del accesorio!",
+                            whitespace: true,
+                        },
+                    ]}
+                >
+                    <InputNumber
+                        style={{
+                            width: 200,
+                        }}
+                        defaultValue="1"
+                        min="0"
+                        max="1000"
+                        step="0.01"
+                        onChange={onChange}
+                        stringMode
+                    />
                 </Form.Item>
 
                 <Form.Item

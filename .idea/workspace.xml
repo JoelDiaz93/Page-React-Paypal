@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da93bdf-0dda-4a51-b44e-232ebaf31cb1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/database.rules.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemAccesory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemAccesory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemFood.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemFood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemPets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemPets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PayPalReact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PayPalReact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AccesoriesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AccesoriesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CategoryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CategoryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FoodPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FoodPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ServicePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ServicePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -44,6 +52,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Joel\Downloads\Page-React-Paypal" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -57,10 +70,25 @@
       <workItem from="1627011904090" duration="11057000" />
       <workItem from="1627048619093" duration="1118000" />
       <workItem from="1627093458998" duration="18664000" />
+      <workItem from="1627328401243" duration="2880000" />
+      <workItem from="1627429217238" duration="7221000" />
+      <workItem from="1627518509336" duration="2811000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
